@@ -4,10 +4,10 @@
     font-family: "roboto",sans-serif;
     text-align: center;
     margin: 10px;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 .registro{
-    font-weight: lighter;
+    font-weight: 600;
     text-align: center;
     text-overflow: clip;
     white-space: pre-line;
@@ -33,59 +33,66 @@
     
 }
 
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
 header{
-    background-color: rgb(32, 141, 141);
-    margin: 0;
-
-    
-}
-
-header .logo{
-    margin: 0;
-    padding: 15px 15px;
-    font-weight: bold;
-    color: rgb(42, 17, 63);
-    font-size: 1.6em;
-}
-
-header .container{
     display: flex;
-    flex-direction: column;
+    background-color: rgb(32, 141, 141);;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
-header nav{
+.logo{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
+    align-items: center;
+    padding: 5px;
+    color: black;
 }
 
-header a{
-    padding: 2px 10px;
-    text-decoration: navajowhite;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+.logo h2{
+    padding: 10px;
+
+
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 10px;
+
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: black;
+
+}
+
+nav a:hover{
+    
+    color:blueviolet;
 }
 
 header a:hover{
     color: blueviolet;
 }
 
-
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
+@media only screen and (max-width: 850px){
+    header{
+        flex-direction: column;
     }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 10px;
-        
+    nav{
+        padding: 10px 0px;
     }
+}
 
+
+
+    
 body{
     background-color:rgb(205, 232, 232);
     margin: 0;
@@ -100,7 +107,7 @@ button{
 }
 
 button:hover{
-    background-color:rgb(12, 92, 135);
+    background-color:blueviolet;
 }
 
 div input{
@@ -122,21 +129,3 @@ div a:hover{
     color: rgb(129, 12, 183);
 }
 
-@media(min-width:850px){
-    header{
-     
-        width: 100%;
-    }
-    header.container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        
-    }
-    header div nav a{
-        flex-direction: row;
-    }
-}
